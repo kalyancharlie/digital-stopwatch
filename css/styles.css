@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+}
+
+.laps {
+    max-width: 300px;
+
+    font-size: 1.5rem;
+}
+
+.page-wrapper {
+    width: 100vw;
+}
+
+.stopwatch-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.stopwatch-counter {
+    text-align: center;
+}
+
+/* Temp Styles */
+.stopwatch-laps {
+    flex-basis: 100%;
+    border: 2px solid black;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 0.5s ease-in;
+}
+
+.laps {
+    padding: 1rem 1.5rem;
+}
+
+.laps p {
+    padding: 5px 10px;
+    border-bottom: 1px dotted black;
+}
+
+.laps p:last-child {
+    border-bottom: none;
+}
+.stopwatch-controls {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stopwatch-controls button {
+    font-size: 1rem;
+    padding: 4px 12px;
+
+}
