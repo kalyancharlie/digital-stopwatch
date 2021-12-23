@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Digital Stopwatch</title>
   </head>
@@ -12,16 +22,25 @@
       <div class="stopwatch-wrapper">
         <div class="stopwatch">
           <div class="stopwatch-counter">
-            <p id="stopwatch-counter">00 : 00 : 00 : 000</p>
-          </div>
-          <div class="stopwatch-laps">
+            <p id="stopwatch-counter">00:00:00:000</p>
+            <div class="stopwatch-laps">
+              <div class="laps-header">
+                <h5>Laps Counter</h5>
+              </div>
               <div class="laps" id="laps_list"></div>
+            </div>
           </div>
           <div class="stopwatch-controls">
-            <button onclick="startAndStop()" id="start_stop_btn">Start</button>
-            <button onclick="lap()" id="lap_btn">Lap</button>
-            <button onclick="resetLapss()" id="lap_btn">Reset Laps</button>
-            <button onclick="reset()">Reset</button>
+            <button id="start_stop_btn" class="btn-start">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="lap_btn" class="btn-lap">Lap</button>
+            <button id="reset_laps_btn" class="btn-reset-laps">
+              Reset Laps
+            </button>
+            <button class="btn-reset" id="reset_counter_btn">
+              <i class="fas fa-sync-alt"></i>
+            </button>
           </div>
         </div>
       </div>
